@@ -8,15 +8,38 @@
     <link rel="stylesheet" href="Styles/HomeStyle.css">
 </head>
 
-<nav>
-    <ul>
-        <li><a href="Form.html">Form</a></li>
-    </ul>
-</nav>
-
 <body>
-    <h1>Welcome to the Sample Page</h1>
-    <p>This is a simple HTML page with linked CSS for styling.</p>
+    <header>
+        <H1>Pokemon Unofficial History</H1>
+    <nav> 
+        <ul class = "sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href= "form.html">Register as a trainer</a></li>
+        </ul>
+        <ul>
+            <li><a href= "form.html">Register as a trainer</a></li>
+            <li class = "menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav> 
+    </header>
+    <div class = "box1">
+    <image src="Images\International_Pokémon_logo.svg" alt="Pokemon Logo" width="300px" height="auto">
+    </div>
+    <div class = "box2">
+    <h3>The main idea behind Pokémon was conceived by Satoshi Tajiri. Tajiri was born on 28 August 1965, and grew up in Machida, a suburb of Tokyo. As a child, he enjoyed discovering and catching insects and other small creatures in the various ponds and fields that surrounded is town. During Japan's economic miracle, many cities, including Machida, were significantly expanded. As a consequence, Machida's nature was largely destroyed. In his second year of junior high school, an arcade hall opened in Tajiri's neighborhood, introducing him to video games. While studying electrical engineering at Tokyo College of Technology, Tajiri began publishing a doujinshi magazine titled Game Freak. The title was inspired by the 1932 film Freaks, which Tajiri was fascinated with at the time. He self-published the first issue of the magazine in March 1983, at the age of 17. At the time, magazines specializing in video games did not yet exist in Japan, allowing Game Freak to fill a gap in the market. Sometime later, Tajiri was contacted by aspiring manga artist Ken Sugimori, who became Game Freak's illustrator. Game Freak folded in the late 1980s, by which point Tajiri had become a respected game journalist in Japan's fledgling video game industry.
+    Tajiri's knowledge of video games brought him into contact with Tsunekazu Ishihara. Ishihara had studied Arts and Science at Tsukuba University, and was trained in CGI. After working in advertising for two years, Ishihara joined a company named Sedic in 1983, which created video graphics and software, including one video game, Otocky (1987). As video games grew in popularity, Sedic also produced a number of game-related television shows for Fuji Television's late-night slot. In his job as a TV producer, Ishihara befriended Tajiri, as well as Shigesato Itoi, who would later become CEO of Ape, Inc. Ishihara was also the general director of the world's first gaming encyclopedia: TV Games: Encyclopedia of Video Games (テレビゲーム—電視遊戯大全, Terebigēmu — Denshi Yūgi Taizen). Journalist Kenji Hatakeyama wrote that, at the time, Ishihara was probably the most well-connected man in the industry. Masakazu Kubo, who would later play a vital role in Pokemon, wrote that Ishihara possessed a knowledge of games that was "beyond comparison". Ishihara was also interested in playing cards, and contributed to the development of at least three simple card games designed by Itoi and published by Ape.
+    In 1986, Tajiri, Sugimori, and a few other enthusiasts started an informal development team called Game Freak, named after the magazine it grew out of. Over the next few years, they independently developed the puzzle game Quinty, working on it alongside school or their regular jobs. However, no one within the group knew how to make the game's music. After consulting all his contacts, Tajiri got in touch with Junichi Masuda, who became the group's composer. Quinty was finished in 1989, and published by Namco. Tajiri officially incorporated Game Freak Co., Ltd. on 26 April 1989.
+    </h3>
+    </div>
+    <script>
+        const sidebar = document.querySelector('.sidebar');
+        function showSidebar(){
+            sidebar.style.display = 'flex';
+        }
+        function hideSidebar(){
+            sidebar.style.display = 'none';
+        }
+    </script>
 </body>
 
 <footer>
