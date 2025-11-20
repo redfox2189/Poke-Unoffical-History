@@ -149,7 +149,7 @@ figcaption{
     justify-content : center;
     font-size : 1.5rem;
     text-align : center;
-    color:#ffffff
+    color:#ffffff;
 }
 .box2{
     width: 90%;
@@ -160,7 +160,7 @@ figcaption{
     justify-content : center;
     font-size : 1.5rem;
     text-align : center;
-    color:#ffffff
+    color:#ffffff;
 }
 footer{
     text-align : center;
@@ -193,7 +193,7 @@ footer{
         object-fit: fill;
     }
     .sidebar{
-        width:100%;
+        width:80%;
     }
     #grid-container{
         grid-auto-columns : auto;
