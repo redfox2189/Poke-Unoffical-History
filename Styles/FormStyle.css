@@ -204,9 +204,7 @@ footer{
         grid-auto-rows: 300px;
         grid-template-areas:
             "box1"
-            "box2"
-            "box3"
-            "box4";
+            "box2";
         grid-template-columns: 1fr;
         justify-content: center;
         margin-bottom: 50%;
@@ -221,6 +219,7 @@ footer{
         display: block;
         align-items: center;
         justify-content: center;
+        width: 80%
     }
     .box2{
         font-size: 15px;
@@ -230,6 +229,7 @@ footer{
         display: block;
         align-items: center;
         justify-content: center;
+        width: 80%
     }
     body p{
         font-size: 1rem;
